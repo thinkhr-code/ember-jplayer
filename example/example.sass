@@ -1,0 +1,114 @@
+/**
+  Example Sass file for jPlayer component
+
+  This assumes the following dependencies:
+  - Foundation
+  - Font Awesome
+*/
+$primary:         #008AB1 !default;
+$secondary:       #4A8314 !default;
+$tertiary:        #F49402 !default;
+$primary-hover: scale-color($primary, $lightness: 15%) !default;
+$accent:          #E6E6E6 !default;
+$accent-text: scale-color($accent, $lightness: -65%);
+$padding: rem_calc(25);
+$player-width: rem_calc(520);
+$jplayer-rounded: rem_calc(15);
+
+@mixin clickable() {
+  cursor: pointer;
+}
+
+.jp-audio {
+  margin-bottom: rem_calc(15);
+  background-color: $background;
+  border-radius: $jplayer-rounded;
+  background-color: $accent;
+  color: $accent-text;
+  width: rem_calc($player-width);
+
+  @media #{$small-only} {
+    width: 100%;
+  }
+
+  i {
+    @include clickable;
+
+    color: $primary;
+    vertical-align: top;
+
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+
+  .jp-gui {
+    padding: $padding;
+    padding-bottom: rem_calc(21);
+
+    .play-controls {
+      width: rem_calc(80);
+      display: inline-block;
+      font-size: rem_calc(16);
+      vertical-align: top;
+
+      .fa-pause {
+        color: $secondary;
+      }
+      .fa-stop {
+        margin-top: rem_calc(9);
+      }
+    }
+
+    .play-progress {
+      width: rem_calc(260);
+      display: inline-block;
+      font-size: rem_calc(12);
+
+      @media #{$small-only} {
+        width: rem_calc(200);
+      }
+
+      i { margin-top: rem_calc(3); }
+
+      .jp-seek-bar {
+        width: 100%;
+        background-color: scale-color($accent, $lightness: -12%);
+
+        .jp-play-bar {
+          width: 100%;
+          background-color: $primary;
+          color: $primary;
+        }
+      }
+    }
+
+    .volume-controls {
+      width: rem_calc(117);
+      display: inline-block;
+      vertical-align: top;
+      margin: rem_calc(8 0 0 10);
+
+      i {
+        width: rem_calc(16);
+      }
+
+      .jp-volume-bar {
+        @include clickable;
+
+        width: rem_calc(74);
+        height: rem_calc(10);
+        margin: rem_calc(2 5);
+        background-color: scale-color($accent, $lightness: -12%);
+        display: inline-block;
+
+        .jp-volume-bar-value {
+          width: 100%;
+          height: rem_calc(10);
+          background-color: $tertiary;
+          color: $tertiary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.jp-jplayer
+#jp_container_1.jp-audio
+  .jp-gui
+
+    .play-controls
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Play'
+        i.fa.fa-play.fa-fw.fa-2x.jp-play
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Pause'
+        i.fa.fa-pause.fa-fw.fa-2x.jp-pause
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Stop'
+        i.fa.fa-stop.fa-fw.jp-stop
+
+    .play-progress.text-center
+      .jp-progress
+        .jp-seek-bar
+          .jp-play-bar .
+
+      .jp-current-time.left
+      .jp-duration.right
+
+    .volume-controls
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Mute'
+        i.fa.fa-volume-off.fa-fw.jp-mute
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Volume'
+        .jp-volume-bar
+          .jp-volume-bar-value .
+      span
+        = if enableTooltips
+          = tooltip-on-element text='Max Volume'
+        i.fa.fa-volume-up.fa-fw.jp-volume-max
+
+  .jp-no-solution
+    p Sorry, your browser is not supported
