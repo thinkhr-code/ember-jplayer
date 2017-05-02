@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.com/MammothHR/ember-jplayer.svg?token=xGaPGowvPdvqS2QgbViy&branch=master)](https://travis-ci.com/MammothHR/ember-jplayer)
+
 # ember-jplayer
 
-An Ember component for [jPlayer](https://github.com/jejacks0n/jPlayer).
+An Ember component for [jPlayer](https://github.com/jplayer/jPlayer).
 
 ## Installation
 
