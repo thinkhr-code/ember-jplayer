@@ -1,7 +1,6 @@
 .jp-jplayer
 #jp_container_1.jp-audio
   .jp-gui
-
     .play-controls
       span
         = if enableTooltips
