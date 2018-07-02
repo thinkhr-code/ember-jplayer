@@ -1,31 +1,39 @@
-import { test, moduleForComponent } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import stubTooltips from 'mammoth-test-helpers/test-support/stubs/ember-tooltips';
 import Ember from 'ember';
+
 
 const { typeOf } = Ember;
 
-moduleForComponent('jplayer-component', 'integration - component - jplayer-component', {
-  integration: true,
-});
+module('integration - component - jplayer-component', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  assert.expect(1);
+  hooks.beforeEach(function() {
+    stubTooltips(this.owner);
+  });
 
-  this.render(hbs`
-    {{ jplayer-component }}
-  `);
+  test('it renders', async function(assert) {
+    assert.expect(1);
 
-  assert.isPresent(this.$('.jplayer-component'), 'It renders');
-});
+    await render(hbs`
+      {{ jplayer-component }}
+    `);
 
-test('jPlayer is initialized', function(assert) {
-  assert.expect(1);
+    assert.exists(this.$('.jplayer-component'), 'It renders');
+  });
 
-  this.render(hbs`
-    {{ jplayer-component }}
-  `);
+  test('jPlayer is initialized', async function(assert) {
+    assert.expect(1);
 
-  const jPlayer = this.$('.jp-jplayer').jPlayer;
+    await render(hbs`
+      {{ jplayer-component }}
+    `);
 
-  assert.equal(typeOf(jPlayer), 'function', 'Jplayer exists');
+    const jPlayer = this.$('.jp-jplayer').jPlayer;
+
+    assert.equal(typeOf(jPlayer), 'function', 'Jplayer exists');
+  });
 });
