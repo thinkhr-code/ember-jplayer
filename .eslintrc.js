@@ -1,13 +1,11 @@
+/* eslint-env node */
 module.exports = {
-  root: true,
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module'
-  },
-  extends: 'eslint:recommended',
-  env: {
-    browser: true
-  },
+  extends: 'mammoth',
+
   rules: {
+    // Eventually!
+    'ember/use-ember-get-and-set': 0,
+    'ember/named-functions-in-promises': 0,
+    'ember/alias-model-in-controller': 0,
   }
 };

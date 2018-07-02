@@ -1,8 +1,8 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from 'ember-jplayer/templates/components/jplayer-component';
 import jquery from 'jquery';
 
-export default Ember.Component.extend({
+export default Component.extend({
   // Passed in
   url: null,
 

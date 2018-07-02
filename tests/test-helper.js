@@ -1,9 +1,11 @@
-import resolver from './helpers/resolver';
+import Application from '../app';
+import config from '../config/environment';
+import { setApplication } from '@ember/test-helpers';
+import { start } from 'ember-qunit';
 import prepTests from 'mammoth-test-helpers/test-support/prep-tests';
-import { setResolver } from 'ember-qunit';
-import { start } from 'ember-cli-qunit';
-
-setResolver(resolver);
 
 prepTests();
+
+setApplication(Application.create(config.APP));
+
 start();

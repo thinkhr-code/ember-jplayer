@@ -1,7 +1,7 @@
 {
   "name": "ember-jplayer",
   "version": "0.2.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A simple component wrapping jPlayer",
   "keywords": [
     "ember-addon"
   ],
@@ -19,36 +19,34 @@
   },
   "dependencies": {
     "jplayer": "~2.8.1",
-    "ember-tether": "^0.4.0",
-    "ember-tooltips": "2.8.2",
-    "ember-cli-babel": "^6.8.0",
-    "ember-cli-emblem": "^0.9.0",
-    "ember-cli-htmlbars": "^2.0.1"
+    "ember-cli-babel": "^6.12.0",
+    "ember-cli-emblem": "^0.10.0",
+    "ember-cli-htmlbars": "^2.0.3"
   },
   "devDependencies": {
+    "babel-eslint": "7.2.3",
     "broccoli-asset-rev": "^2.4.5",
-    "ember-ajax": "^3.0.0",
-    "ember-cli": "2.15.1",
-    "ember-cli-build-notifications": "0.2.0",
+    "ember-ajax": "^3.1.0",
+    "ember-cli": "~3.1.3",
+    "ember-cli-build-notifications": "https://github.com/pdud/ember-cli-build-notifications.git#master",
     "ember-cli-dependency-checker": "^2.0.0",
-    "ember-cli-eslint": "^4.0.0",
+    "ember-cli-eslint": "^4.2.2",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
-    "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-qunit": "^4.0.0",
-    "ember-cli-shims": "^1.1.0",
+    "ember-cli-qunit": "^4.2.1",
+    "ember-cli-shims": "^1.2.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
+    "ember-maybe-import-regenerator": "",
     "ember-resolver": "^4.0.0",
-    "ember-source": "2.15.0",
-    "mammoth-test-helpers": "^0.5.0",
-    "loader.js": "^4.2.3"
+    "ember-source": "^3.0.0",
+    "mammoth-test-helpers": "^0.11.0",
+    "loader.js": "^4.2.3",
+    "eslint": "^3.18.0",
+    "eslint-config-mammoth": "0.1.0",
+    "eslint-plugin-ember": "^4.3.0"
   },
   "engines": {
-    "node": ">= 4"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "node": ">= 6.0.0"
   }
 }
