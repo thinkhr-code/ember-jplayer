@@ -42,7 +42,7 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "2.15.0",
-    "mammoth-test-helpers": "^0.5.0",
+    "mammoth-test-helpers": "v0.11.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
