@@ -40,11 +40,13 @@
     "ember-maybe-import-regenerator": "",
     "ember-resolver": "^4.0.0",
     "ember-source": "^3.0.0",
-    "mammoth-test-helpers": "^0.11.0",
+    "mammoth-test-helpers": "^0.12.0",
     "loader.js": "^4.2.3",
     "eslint": "^3.18.0",
     "eslint-config-mammoth": "0.1.0",
-    "eslint-plugin-ember": "^4.3.0"
+    "eslint-plugin-ember": "^4.3.0",
+    "ember-tether": "^0.4.0",
+    "ember-tooltips": "^2.9.0"
   },
   "engines": {
     "node": ">= 6.0.0"

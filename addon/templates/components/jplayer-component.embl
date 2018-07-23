@@ -4,15 +4,15 @@
     .play-controls
       span
         = if enableTooltips
-          = ember-tooltip text='Play'
+          = tooltip-on-element text='Play'
         i.fa.fa-play.fa-fw.fa-2x.jp-play
       span
         = if enableTooltips
-          = ember-tooltip text='Pause'
+          = tooltip-on-element text='Pause'
         i.fa.fa-pause.fa-fw.fa-2x.jp-pause
       span
         = if enableTooltips
-          = ember-tooltip text='Stop'
+          = tooltip-on-element text='Stop'
         i.fa.fa-stop.fa-fw.jp-stop
 
     .play-progress.text-center
@@ -26,16 +26,16 @@
     .volume-controls
       span
         = if enableTooltips
-          = ember-tooltip text='Mute'
+          = tooltip-on-element text='Mute'
         i.fa.fa-volume-off.fa-fw.jp-mute
       span
         = if enableTooltips
-          = ember-tooltip text='Volume'
+          = tooltip-on-element text='Volume'
         .jp-volume-bar
           .jp-volume-bar-value .
       span
         = if enableTooltips
-          = ember-tooltip text='Max Volume'
+          = tooltip-on-element text='Max Volume'
         i.fa.fa-volume-up.fa-fw.jp-volume-max
 
   .jp-no-solution
