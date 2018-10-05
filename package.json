@@ -11,7 +11,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "github:MammothHR/ember-jplayer",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
