@@ -14,7 +14,7 @@ export default Component.extend({
   didRender() {
     const url = this.get('url');
 
-    this.$('.jp-jplayer').jPlayer({
+    $(this.element.querySelector('.jp-jplayer')).jPlayer({
       ready() {
         jquery(this).jPlayer('setMedia', { mp3: url });
       },
@@ -25,6 +25,6 @@ export default Component.extend({
   },
 
   willDestroyElement() {
-    this.$('.jp-jplayer').jPlayer('destroy');
+    $(this.element.querySelector('.jp-jplayer')).jPlayer('destroy');
   }
 });

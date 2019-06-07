@@ -3,10 +3,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import stubTooltips from 'mammoth-test-helpers/test-support/stubs/ember-tooltips';
-import Ember from 'ember';
-
-
-const { typeOf } = Ember;
+import { typeOf } from '@ember/utils';
 
 module('integration - component - jplayer-component', function(hooks) {
   setupRenderingTest(hooks);
