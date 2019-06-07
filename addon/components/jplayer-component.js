@@ -1,6 +1,5 @@
 import Component from '@ember/component';
 import layout from 'ember-jplayer/templates/components/jplayer-component';
-import jquery from 'jquery';
 
 export default Component.extend({
   // Passed in
@@ -13,10 +12,11 @@ export default Component.extend({
 
   didRender() {
     const url = this.get('url');
+    const jPlayerElement = this.element.querySelector('.jp-jplayer');
 
-    $(this.element.querySelector('.jp-jplayer')).jPlayer({
+    $(jPlayerElement).jPlayer({
       ready() {
-        jquery(this).jPlayer('setMedia', { mp3: url });
+        $(jPlayerElement).jPlayer('setMedia', { mp3: url });
       },
 
       cssSelectorAncestor: '#jp_container_1',
