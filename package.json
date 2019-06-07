@@ -42,7 +42,7 @@
     "ember-source": "^3.9.0",
     "ember-tooltips": "^3.3.2",
     "eslint": "^5.16.0",
-    "eslint-config-mammoth": "0.2.0",
+    "eslint-config-mammoth": "v0.3.0",
     "eslint-plugin-ember": "^6.5.1",
     "loader.js": "^4.7.0",
     "mammoth-test-helpers": "^0.15.0"
